@@ -1,0 +1,37 @@
+#Inserting Some data in “Book_info”
+INSERT INTO Book_info  VALUES('0006','Odes etpoésiesdiverses','English',2,20,15,1862,1,2);
+INSERT INTO Book_info  VALUES('0008','Sense and Sensibility','English',1,20,15,1811,1,1);
+INSERT INTO Book_info  VALUES('0092','The Art of Software Testing','English',101,20,15,1979,2,101);
+
+#Inserting Some data in Binding table
+INSERT INTO Binding_Info VALUES(1,'Jane Austen');  
+INSERT INTO Binding_Info VALUES(2,'Victor Hugo');
+INSERT INTO Binding_Info VALUES(101,'Ron Patton');
+
+#Inserting Some data in Borrower table
+Insert into BORROWER_INFO VALUES(1,'James Smith','7-July-2020','18-July-2020','18-July-2020',NULL,'0006',1)  
+Insert into BORROWER_INFO VALUES(2,'Hannah Otah','02-July-2020','8-July-2020','8-July-2020',NULL,'0008',2)
+Insert into BORROWER_INFO VALUES(3,'Janest','03-July-2020','10-July-2020','10-July-2020',NULL,'0092',3)
+
+#Inserting Some data in Staff table
+ Insert into STAFF_INFO values (1,'Nicholas','administrator','1234asd');  
+Insert into STAFF_INFO values (2,'Mrs. Smith','administrator','iloveyou');
+
+#Insert Some data in Reader table
+Insert into READER_INFO values (1,'James Smith','Male','06-Dec-1996','29B Hollen Street','01681593271',1);  
+Insert into READER_INFO values (2,'Hannah Ohtah','Female','02-Feb-2000','106 Wall Street','01598376554',2); 
+Insert into READER_INFO values (3,'Janest','Female','14-Feb-2000','106 Wall Street','01409873724',3);
+
+#Inserting Some Data in Shelf Table
+Insert into Shelf_Info Values(1, 1, 1, '0006' );  
+Insert into Shelf_Info Values(2, 1, 1, '0008');  Insert into Shelf_Info Values(3, 1, 10, '0092'); 
+
+
+#Inserting Some Data in Author Table
+Insert into Author_Info Values(1,'Victor Hugo', 'Besancon,France','0006');  
+Insert into Author_Info Values(2, 'Jane Austen','Steventon, UK','0008');
+ Insert into Author_Info Values(101, 'Ron Patton','Washington','0092'); 
+ 
+#Inserting Some Data in Genre Table
+Insert into Genre_Info Values(1,'Novel');  
+Insert into Genre_Info Values(2,'ICT and CS'); 

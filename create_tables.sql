@@ -1,4 +1,4 @@
--- create table contain book's info 
+--  create table contain book's info 
 CREATE TABLE Book_info 
 (  
     ISBN_code int PRIMARY KEY,  
@@ -12,21 +12,21 @@ CREATE TABLE Book_info
     Publication_year int  
 );
 
--- Create table contain binding detail
+--  Create table contain binding detail
 CREATE TABLE Binding_details  
 (  
     Binding_id int PRIMARY KEY,  
     Binding_Name varchar(50)  
 );
 
--- create table contain genre details
+--  create table contain genre details
 CREATE TABLE Genre_details
 (
 	Genre_id int PRIMARY KEY,
     Genre_name varchar(45)
 );
 
--- create table contain authour info
+--  create table contain authour info
 CREATE TABLE Author_info
 (
 	Author_id int PRIMARY KEY,
@@ -34,7 +34,7 @@ CREATE TABLE Author_info
     Birth_place varchar(45)
 );
 
--- create table contain borrowers info
+--  create table contain borrowers info
 CREATE TABLE Borrower_info
 (
 	Borrower_id int PRIMARY KEY,
@@ -45,7 +45,7 @@ CREATE TABLE Borrower_info
     Check_by int
 );
 
--- create table contain staff info
+--  create table contain staff info
 CREATE TABLE Staff_info
 (
 	Staff_id int PRIMARY KEY,  
@@ -54,7 +54,7 @@ CREATE TABLE Staff_info
     Staff_role varchar(45)
 );
 
--- create table contain reader info
+--  create table contain reader info
 Create TABLE Reader_info 
 (  
     Reader_id int PRIMARY KEY,  
@@ -66,7 +66,7 @@ Create TABLE Reader_info
     Contact_number varchar(11)  
 );
 
--- create table contain detail of shelf where the book stored
+--  create table contain detail of shelf where the book stored
 CREATE TABLE Shelf_details
 (
 	Shelf_id int PRIMARY KEY,

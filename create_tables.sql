@@ -1,3 +1,7 @@
+CREATE DATABASE test;
+USE test;
+
+
 --  create table contain book's info 
 CREATE TABLE Book_info 
 (  
@@ -5,22 +9,22 @@ CREATE TABLE Book_info
     Book_title varchar(100),  
     Language_use varchar(10),  
     Binding_id int, 
-    Author_id int,
     No_copies_actual int,  
     No_copies_current int,  
-    Genre_id int,  
-    Publication_year int  
+    Publication_year int,
+    Genre_id int,
+    Author_id int
 );
 
 --  Create table contain binding detail
-CREATE TABLE Binding_details  
+CREATE TABLE Binding_info  
 (  
     Binding_id int PRIMARY KEY,  
     Binding_Name varchar(50)  
 );
 
---  create table contain genre details
-CREATE TABLE Genre_details
+--  create table contain genre info
+CREATE TABLE Genre_info
 (
 	Genre_id int PRIMARY KEY,
     Genre_name varchar(45)
@@ -42,7 +46,8 @@ CREATE TABLE Borrower_info
     Borrow_from datetime,
     Borrow_to datetime,
     Return_date datetime,
-    Check_by int
+    Check_by int,
+	ISBN_code int
 );
 
 --  create table contain staff info
@@ -67,7 +72,7 @@ Create TABLE Reader_info
 );
 
 --  create table contain detail of shelf where the book stored
-CREATE TABLE Shelf_details
+CREATE TABLE Shelf_info
 (
 	Shelf_id int PRIMARY KEY,
     Floor_no int,
